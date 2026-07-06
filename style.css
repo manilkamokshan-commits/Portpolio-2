@@ -822,3 +822,37 @@ section{
     opacity:1;
     transform:scale(1);
 }
+#menu-icon{
+    font-size: 28px;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+@media(max-width:768px){
+
+    #menu-icon{
+        display: block;
+    }
+
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: -100%;
+        width: 100%;
+        background: #1f242d;
+        padding: 20px 0;
+        transition: .4s;
+    }
+
+    .navbar.active{
+        left: 0;
+    }
+
+    .navbar a{
+        display: block;
+        margin: 15px 0;
+        text-align: center;
+    }
+
+}
