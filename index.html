@@ -8,6 +8,15 @@
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 </head>
+<script>
+const menuIcon = document.querySelector("#menu-icon");
+const navbar = document.querySelector(".navbar");
+
+menuIcon.onclick = () =>{
+    navbar.classList.toggle("active");
+}
+</script>
+
 <body>
     <div id="header">
        <a href="#home" class="logo">
@@ -365,12 +374,6 @@ document.querySelectorAll(
 ".hidden,.hidden-left,.hidden-right,.hidden-zoom"
 ).forEach(el=>observer.observe(el));
 
-    const menuIcon = document.querySelector("#menu-icon");
-const navbar = document.querySelector(".navbar");
-
-menuIcon.onclick = () =>{
-    navbar.classList.toggle("active");
-}
 
 </script>
 
