@@ -119,12 +119,13 @@ section{
 }
 
 .home-img img{
-    width: 360px;
+      width: 350px;
     height: 350px;
     border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
     border: 5px solid #00e5ff;
-    box-shadow: 0 0 40px #00e5ff;
-    transition: .5s;
+    box-shadow: 0 0 30px #00e5ff;
 }
 
 .home-img img:hover{
